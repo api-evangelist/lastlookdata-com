@@ -64,27 +64,39 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-LastLook Data provides financial market data APIs tailored for AI agents, offering real-time treasury yields, mortgage rates, foreign exchange, macro indicators, cryptocurrency prices, and company fundamentals. Access is managed via x402 micropayments on Base, eliminating the need for API keys, subscriptions, or minimum usage requirements. The service delivers up-to-date data sourced from FRED and other providers, enabling agents to integrate financial insights directly into their workflows without friction.
+LastLook Data provides real-time financial market data for AI agents, including Treasury yields, mortgage rates, foreign exchange rates, energy prices, macro indicators, recession signals, and economic calendar events. Data is delivered via the x402 micropayment protocol on Base, with no API keys, subscriptions, or minimum usage requirements. Users pay per query using USDC or SOL, enabling seamless integration into autonomous agents.
 
-**Areas:** Company · Finance · Data · AI · MarketData
+**Areas:** Company · Financial-Data · AI · Market-Data · Payments · API
 
 ## lastlookdata-com on APIs.io
 
 Everything profiled for lastlookdata-com is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lastlookdata-com/](https://apis.io/providers/lastlookdata-com/)** — or go straight to one of the APIs or properties below.
 
-### APIs (1)
+### APIs (6)
 
-- [LastLook Data API](https://apis.io/apis/lastlookdata-com/lastlook-data-api/) — Financial market data API for AI agents providing treasury yields, mortgage rates, FX rates, energy prices, macro indicators, and company fundamentals.
+- [lastlookdata-com Bundles API](https://apis.io/apis/lastlookdata-com/lastlookdata-com-bundles-api/) — Pre-built multi-series bundles — one payment, parallel data fetch
+- [lastlookdata-com Calendar API](https://apis.io/apis/lastlookdata-com/lastlookdata-com-calendar-api/) — Economic data release schedule
+- [lastlookdata-com Derived API](https://apis.io/apis/lastlookdata-com/lastlookdata-com-derived-api/) — Computed and interpreted market signals
+- [lastlookdata-com FRED API](https://apis.io/apis/lastlookdata-com/lastlookdata-com-fred-api/) — Federal Reserve Economic Data — raw series
+- [lastlookdata-com Free API](https://apis.io/apis/lastlookdata-com/lastlookdata-com-free-api/) — No payment required
+- [lastlookdata-com FX API](https://apis.io/apis/lastlookdata-com/lastlookdata-com-fx-api/) — G10 FX rates via European Central Bank
 
 ### Published properties
 
 Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-#### Security (1)
+#### Security (2)
 
 Authentication, trust centre, and vulnerability disclosure.
 
+- [Lastlookdata Com Authentication](https://apis.io/security/lastlookdata-com/lastlookdata-com-authentication/)
 - [Lastlookdata Com Domain Security](https://apis.io/security/lastlookdata-com/lastlookdata-com-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Lastlookdata Com Scopes](https://apis.io/scopes/lastlookdata-com/lastlookdata-com-scopes/)
 
 ## Where to find this API
 
@@ -98,29 +110,29 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 14.2** — emerging · rubric 0.25.0 · scored 2026-10-31
+**Kin Score 26.5** — thin · rubric 0.25.0 · scored 2026-10-30
 
 | Facet | Score |
 |---|---|
-| Discoverability | 56.7 |
-| Contract quality | 0.0 |
+| Discoverability | 66.1 |
+| Contract quality | 43.7 |
 | Contract governance | 0.0 |
 | Operational transparency | 0.0 |
 | Developer ergonomics | 23.1 |
 | Access clarity | 21.1 |
 
-**Agent readiness 7.8** — agent-aware
+**Agent readiness 28.0** — agent-aware
 
 | Agent-readiness dimension | Result |
 |---|---|
-| Spec Presence | — |
+| Spec Presence | yes |
 | Agentic Access | — |
 | Reversibility Documented | — |
 | MCP Server | documented (partial credit) |
 | Auth Clarity | — |
 | Idempotency | — |
-| Error Semantics | — |
-| OpenAPI Examples | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | verified |
 | Rate Limit Signal | — |
 | Event Surface Described | — |
 | Agent Skills | unknown |
@@ -133,9 +145,9 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
 | Pagination Ratio | na |
-| Operation Distinctiveness | na |
+| Operation Distinctiveness | distinct |
 
-**Regulatory alignment 12.7** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 20.0** — Payments
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lastlookdata-com/](https://apis.io/providers/lastlookdata-com/).
 
